@@ -1,0 +1,291 @@
+{
+  "type": "object",
+  "properties": {
+    "EngineId": {
+      "type": "string"
+    },
+    "FrameObjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Appearance": {
+            "type": "object",
+            "properties": {
+              "AgeGroupAttributes": {
+                "type": "object",
+                "properties": {
+                  "AdultConfidence": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "ChildConfidence": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "PersonAgeGroup": {
+                    "type": "string",
+                    "enum": ["UNKNOWN", "ADULT", "CHILD", "SENIOR", "TEENAGER"]
+                  },
+                  "SeniorConfidence": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "TeenagerConfidence": {
+                    "type": "number",
+                    "format": "float"
+                  }
+                }
+              },
+              "ColorAttributes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "Type": {
+                      "type": "string",
+                      "enum": ["RED", "ORANGE", "YELLOW", "GREEN", "BLUE", "SILVER", "WHITE", "BLACK", "BROWN", "GRAY"]
+                    },
+                    "Value": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              },
+              "LicensePlateAttributes": {
+                "type": "object",
+                "properties": {
+                  "CharaterHeight": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "DectectionConfidence": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "Number": {
+                    "type": "string"
+                  },
+                  "OcrConfidence": {
+                    "type": "number",
+                    "format": "float"
+                  },
+                  "Origin": {
+                    "type": "string"
+                  },
+                  "Region": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string"
+                  }
+                }
+              },
+              "ObjectAttributes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "Likelihood": {
+                      "type": "number",
+                      "format": "float"
+                    },
+                    "Type": {
+                      "type": "string",
+                      "enum": ["CAR", "TRUCK", "BUS", "BIKE", "PERSON"]
+                    }
+                  }
+                }
+              },
+              "Person": {
+                "type": "object",
+                "properties": {
+                  "Body": {
+                    "type": "object",
+                    "properties": {
+                      "ClothingAttributes": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Type": {
+                              "type": "string",
+                              "enum": ["HEADWEAR", "TORSO", "ARMS", "LEGS", "FEET"]
+                            },
+                            "Value": {
+                              "type": "boolean"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "Face": {
+                    "type": "object",
+                    "properties": {
+                      "accessoryAttributes": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Type": {
+                              "type": "string",
+                              "enum": ["HAT", "MASK", "HIJAB", "HELMET", "GLASSES", "DARKGLASSES"]
+                            },
+                            "Value": {
+                              "type": "boolean"
+                            }
+                          }
+                        }
+                      },
+                      "age": {
+                        "type": "integer",
+                        "format": "int32"
+                      },
+                      "faceFeatureAttributes": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Type": {
+                              "type": "string",
+                              "enum": ["SMILE", "BLINK", "MOUTHOPEN", "ETHNICITYWHITE", "ETHNICITYBLACK", "ETHNICITYHISPANIC", "ETHNICITYASIAN", "ETHNICITYINDIAN", "ETHNICITYARABIAN", "EMOTIONNEUTRAL", "EMOTIONANGER", "EMOTIONCONTEMPT", "EMOTIONDISGUST", "EMOTIONFEAR", "EMOTIONHAPPINESS", "EMOTIONSADNESS", "EMOTIONSURPRISE"]
+                            },
+                            "Value": {
+                              "type": "boolean"
+                            }
+                          }
+                        }
+                      },
+                      "faceQuality": {
+                        "type": "integer",
+                        "format": "int32"
+                      },
+                      "facialAttributes": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Type": {
+                              "type": "string",
+                              "enum": ["BEARD", "MUSTACHE", "SIDEBURN"]
+                            },
+                            "Value": {
+                              "type": "boolean"
+                            }
+                          }
+                        }
+                      },
+                      "gender": {
+                        "type": "string",
+                        "enum": ["MALE", "FEMALE", "UNSPECIFIED"]
+                      }
+                    }
+                  }
+                }
+              },
+              "Shape": {
+                "type": "object",
+                "properties": {
+                  "Point": {
+                    "type": "object",
+                    "properties": {
+                      "X": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "format": "double"
+                      }
+                    }
+                  },
+                  "Rectangle": {
+                    "type": "object",
+                    "properties": {
+                      "Height": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "Width": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "X": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "format": "double"
+                      }
+                    }
+                  }
+                }
+              },
+              "Snapshot": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Vehicle": {
+                "type": "object",
+                "properties": {
+                  "Models": {
+                    "type": "string"
+                  },
+                  "Orientation": {
+                    "type": "string"
+                  },
+                  "Tags": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "Behaviour": {
+            "type": "object",
+            "properties": {
+              "DirectionAttributes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "Likelihood": {
+                      "type": "number",
+                      "format": "float"
+                    },
+                    "Type": {
+                      "type": "string",
+                      "enum": ["NORTH", "NORTHEAST", "NORTHWEST", "SOUTH", "SOUTHEAST", "SOUTHWEST", "EAST", "WEST"]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ObjectId": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "SceneId": {
+      "type": "string"
+    },
+    "SourceId": {
+      "type": "string"
+    },
+    "TaskId": {
+      "type": "string"
+    },
+    "TimeStamp": {
+      "type": "string"
+    }
+  }
+}

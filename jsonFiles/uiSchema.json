@@ -1,0 +1,108 @@
+{
+    "ui:submitButtonOptions": {
+      "submitText": "Confirm Details",
+      "norender": false,
+      "props": {
+        "disabled": false,
+        "className": "btn btn-info"
+      }
+    },
+    "firstName": {
+      "ui:autofocus": true,
+      "ui:emptyValue": "",
+      "ui:autocomplete": "family-name",
+      "className": "first-name"
+    },
+    "lastName": {
+      "ui:title": "Surname",
+      "ui:emptyValue": "",
+      "ui:autocomplete": "given-name"
+    },
+    "Age": {
+      "ui:title": "Age",
+      "ui:widget": "updown",
+      "backgroundColor": "yellow"
+    },
+    "GitHub": {
+      "ui:placeholder": "http://github.com/"
+    },
+    "email-id": {
+      "ui:title": "Email Id"
+    },
+    "password": {
+      "ui:title": "Password",
+      "ui:widget": "password"
+    },
+    "optionsEnumRadio": {
+      "ui:widget": "radio",
+      "ui:options": {
+        "inline": true
+      }
+    },
+    "telephone": {
+      "ui:options": {
+        "inputType": "tel"
+      }
+    },
+    "Certifications": {
+      "ui:options": {
+        "orderable": false
+      }
+    },
+    "A brief intro": {
+      "items": {
+        "ui:widget": "textarea",
+        "ui:placeholder": "This is a placeholder for text area"
+      }
+    },
+    "Languages": {
+      "ui:widget": "select"
+    },
+    "multipleChoicesList": {
+      "ui:widget": "checkboxes"
+    },
+    "fixedItemsList": {
+      "items": [
+        {
+          "ui:widget": "select"
+        }
+      ]
+    },
+    "Alt Date and Time": {
+      "ui:widget": "alt-datetime",
+      "ui:options": {
+        "yearsRange": [
+          2000,
+          2022
+        ]
+      }
+    },
+    "filesAccept": {
+      "ui:options": {
+        "accept": ".pdf"
+      }
+    },
+    "integerRange": {
+      "ui:widget": "range"
+    },
+    "integerRangeSteps": {
+      "ui:widget": "range"
+    },
+    "color": {
+      "ui:widget": "color"
+    },
+    "disabled": {
+      "ui:disabled": true
+    },
+    "readonly": {
+      "ui:readonly": true
+    },
+    "selectWidgetOptions": {
+      "ui:options": {
+        "backgroundColor": "pink"
+      }
+    },
+    "Are you Indian?": {
+      "ui:widget": "radio"
+    }
+  }

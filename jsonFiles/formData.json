@@ -1,0 +1,24 @@
+{
+    "firstName": "Mini",
+    "lastName": "Norris",
+    "age": 35,
+    "email-id": "mini23norris@gmail.com",
+    "bio": "Roundhouse kicking asses since 1940",
+    "password": "noned",
+    "native": {},
+    "alternative": {},
+    "integerRange": 42,
+    "integerRangeSteps": 80,
+    "disabled": "I am disabled.",
+    "readonly": "I am read-only.",
+    "multipleChoicesList2": [
+      "foo",
+      "bar",
+      "fuzz"
+    ],
+    "customArray": [
+      "react",
+      "jsonschema",
+      "form"
+    ]
+  }
